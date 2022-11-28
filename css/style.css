@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+:root{
+    --blue: #0188DF;
+    --black: #354046;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .2s linear;
+}
+*::selection{
+    background: var(--black);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;left: 0;
+    padding: 2rem 1rem;
+    z-index: 1000;   
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: var(--black);
+}
+header a:hover{
+    color: var(--blue);
+}
+header .container .logo{
+    font-size: 3rem;
+}
+header .container .logo span{
+    color: var(--blue);
+}
+header .nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .nav ul li{
+    margin: 0 1rem;
+}
+
+header .nav ul li a{
+    font-size: 2rem;
+}
+
+header .fa-bars{
+    font-size: 3.5rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;    
+}
+/* @media queries */
+@media (max-width: 768px){
+    body{
+        font-size: 55%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .nav{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
