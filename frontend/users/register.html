@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Classimax | Classified Marketplace Template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Agency HTML Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Classified Marketplace Template v1.0">
+
+  <link href="{% static 'images/favicon.png' %}" rel="shortcut icon">
+
+  <link href="{% static 'plugins/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'plugins/bootstrap/bootstrap-slider.css' %}" rel="stylesheet">
+  <link href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'plugins/slick/slick.css' %}" rel="stylesheet">
+  <link href="{% static 'plugins/slick/slick-theme.css' %}" rel="stylesheet">
+  <link href="{% static 'plugins/jquery-nice-select/css/nice-select.css' %}" rel="stylesheet">
+  
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper">
+
+
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-lg navbar-light navigation">
+					<a class="navbar-brand" href="{% url 'home' %}">
+						<img src="{% static 'images/logo.png' %}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="login py-5 border-top-1">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-8 align-item-center">
+        <div class="border border">
+          <h3 class="bg-gray p-4">Register Now</h3>
+          <form action="#" method="post">
+            <fieldset class="p-4">
+              <input class="form-control mb-3" type="email" placeholder="Email*" required>
+              <input class="form-control mb-3" type="password" placeholder="Password*" required>
+              <input class="form-control mb-3" type="password" placeholder="Confirm Password*" required>
+              <div class="loggedin-forgot d-inline-flex my-3">
+                <input type="checkbox" id="registering" class="mt-1">
+                <label for="registering" class="px-2">By registering, you accept our <a class="text-primary font-weight-bold" href="terms-condition.html">Terms & Conditions</a></label>
+              </div>
+              <button type="submit" class="btn btn-primary font-weight-bold mt-3">Register Now</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap/popper.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap/bootstrap-slider.js' %}"></script>
+<script src="{% static 'plugins/tether/js/tether.min.js' %}"></script>
+<script src="{% static 'plugins/raty/jquery.raty-fa.js' %}"></script>
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+<script src="{% static 'plugins/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+<script src="{% static 'plugins/google-map/map.js' %}" defer></script>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
